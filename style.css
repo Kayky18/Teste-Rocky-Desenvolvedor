@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+/*font-family: 'Zen Dots', cursive;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+}
+
+/*Banner*/
+p{
+    font-weight: 300;
+    color: #111;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(imagens/web/fundo-menu.png)no-repeat center;
+    background-size: cover;
+    
+}
+.banner .texto-menu{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .texto-menu h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .texto-menu p{
+    font-size: 1em;
+    color: #fff;
+    margin-top: 100px;
+}
+.banner .texto-menu span {
+    color: yellow;
+}
+.btn-menu{
+    font-size: 1em;
+    color: #fff;
+    background: #00ffff ;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+.btn-menu:hover{
+    letter-spacing: 6px;
+}
+
+/*Navegação e Logo*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header.rolar-menu{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.rolar-menu .logo {
+    padding: 20px;
+    background:black;
+    border-radius: 20px;
+}
+header .navegacao{
+    position: relative;
+    display: flex;
+}
+header .navegacao li{
+    list-style: none;
+    padding: 20px;
+}
+header .navegacao li a{
+    text-decoration: none;
+    color: #fff;
+}
+header.rolar-menu .navegacao li a{
+    color: #111;
+}
+header .navegacao li a:hover{
+    color: #ffff00;
+}
+
+/*Sobre*/
+.fundo{
+    background: url(imagens/web/bg.png)no-repeat top center ; 
+}
+
+.conteudo-principal h2 {
+   padding: 60px 0;
+   font-size: 2em;
+   margin: 0 200px;
+}
+
+.conteudo-principal .conteudo{
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+    width: 80%;
+    margin: 0 200px;
+}
+.conteudo-principal .conteudo p{
+    padding: 20px;
+}
+.conteudo-principal .conteudo span{
+    font-weight: bold;
+}
+
+/*Serviços*/
+.titulo{
+    font-size: 1.5em;
+}
+.titulo h2{
+    margin: 100px 200px;
+}
+.servicos .conteudo-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.caixa{
+    display: inline-block;
+    padding:5px 40px;
+    
+}
+.caixa .texto{
+    text-align: center;
+}
+.caixa .texto h3{
+    line-height: 100px;
+    color: #ffff00;
+    font-size: 1.2em;
+}
+.caixa .texto p{
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.caixa .img-caixa{
+    width: 450px;
+    height: 500px;
+    background: url(imagens/web/s3\ ft1.png)no-repeat center ;
+    border-radius: 20px;
+}
+.caixa .img-caixa2{
+    width: 450px;
+    height: 500px;
+    background: url(imagens/web/s3\ ft2.png)no-repeat center ;
+    border-radius: 20px;
+}
+.caixa .img-caixa3{
+    width: 450px;
+    height: 500px;
+    background: url(imagens/web/s3\ ft3.png)no-repeat center ;
+    border-radius: 20px;
+}
+
+/*Diferenciais*/
+.diferenciais .conteudo-principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+.diferenciais .conteudo-principal .caixa{
+    padding:5px 150px;
+    margin-bottom: 50px;
+}
+.diferenciais .conteudo-principal .caixa .img-caixa3 .img-texto img, .diferenciais .conteudo-principal .caixa .img-caixa2 .img-texto img, .diferenciais .conteudo-principal .caixa .img-caixa .img-texto img{
+    margin: 10px 50px;
+    width: 200px;
+    height:200px;
+}
+.diferenciais .conteudo-principal .caixa .img-caixa{
+    width: 300px;
+    height: 450px;
+    background: url(imagens/web/s4\ ft1.png)no-repeat center ;
+    border-radius: 20px;
+}
+.diferenciais .conteudo-principal .caixa .img-caixa2{
+    width: 300px;
+    height: 450px;
+    background: url(imagens/web/s4\ ft2.png)no-repeat center ;
+    border-radius: 20px;
+}
+.diferenciais .conteudo-principal .caixa .img-caixa3{
+    width: 300px;
+    height: 450px;
+    background: url(imagens/web/s4\ ft3.png)no-repeat center ;
+    border-radius: 20px;
+}
+
+
+hr{
+    margin: 0;
+    border: 0px;
+    background:#ffff00;
+    height: 50px;
+}
+
+.contato{
+    height: 90vh;
+    width: 100%;
+    background-color: #111;
+    
+}
+.contato .informacao{
+    width: 40%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    padding-top: 20px;
+}
+.contato .informacao img{
+    margin: 20px;
+}
+.contato .informacao .redes-sociais{
+    display: inline;
+}
+.contato .informacao .redes-sociais img{
+    width: 50px;
+}
+.contato .texto-contato{
+    width: 40%;
+    text-align: left;
+    margin: 160px 50px;
+    padding: 20px;
+    display: flex;
+   
+}
+.contato .texto-contato p{
+    color: #fff;
+}
+.contato .texto-contato span {
+    color: #ffff00;
+}
+@media (max-width:991px)
+{
+    header, header.rolar-menu
+    {
+    padding: 20px 75px;
+    }
+    header .navegacao{
+        display:none;
+    }
+    header .logo img{
+        width: 100px;
+    }
+    header .navegacao.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 85px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    } 
+    header .navegacao li{
+        margin-left: 0;
+    }
+    header .navegacao li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+   
+    .menuToggle
+    {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: url(imagens/mobile/menu-mobile.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        filter: invert(1);
+        margin: 0px;
+    }
+    .menuToggle.active{
+        background: url(imagens/mobile/fechar-mobile.png)no-repeat center;
+        width: 60px;
+        height: 60px;
+        background-size: 50px;
+    }
+    header.rolar-menu .menuToggle {
+            filter:invert(0) ;
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .texto-menu h2{
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    .fundo .conteudo-principal{
+        flex-direction: column;
+    }
+    .fundo .conteudo-principal h2{
+         margin: 0;
+    }
+    .fundo .conteudo-principal .conteudo{
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+    .fundo .servicos .titulo h2{
+        margin: 0;
+    }
+    
+    .fundo .servicos .conteudo-principal .caixa{
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        overflow: hidden;
+
+    }
+    .fundo .servicos .conteudo-principal .caixa .img-caixa3 .texto h3{
+       line-height: normal;
+    }
+    .fundo .servicos .conteudo-principal .caixa .img-caixa2 .texto h3{
+        line-height: normal;
+     }
+    .fundo{
+        background: url(imagens/web/bg.png)right bottom;
+        margin: 0;
+
+    }
+    .fundo .diferenciais .titulo h2{
+        margin: 0;
+    }
+    .fundo .diferenciais .conteudo-principal .caixa{
+        margin: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .contato{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .contato .informacao{
+        display: flex;
+        align-items: center;
+    }
+    .contato .informacao .logo-contato img{
+        padding: 25px;
+        width: 150px;
+    }
+}
+
+
